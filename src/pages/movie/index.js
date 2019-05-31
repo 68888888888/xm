@@ -140,8 +140,6 @@ export default class extends Component {
                       <p ref={item.title} className='yinying'></p>
                       <p ref={item.movieId} className='names'>{item.title}</p>
                     </div>
-                    
-                    
                   ))}
                </div>
             </div>

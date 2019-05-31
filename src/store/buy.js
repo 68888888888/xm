@@ -1,7 +1,12 @@
 const reducer=(state={
-    
+    buyyingyuanlist:[],
 },{type,data})=>{
-    return 1
-     
+    switch(type){
+        case 'HOME_YINGYUAN_LIST':
+        const buyyingyuanlist={ buyyingyuanlist:data };
+        return {...state,...buyyingyuanlist}
+        default :
+        return state;
+    }
 }
 export default reducer;
