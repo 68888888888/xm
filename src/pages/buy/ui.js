@@ -9,7 +9,6 @@ export default class extends Component {
      }
      store.subscribe(() => {
          console.log('111')
-         
      })
      
   }

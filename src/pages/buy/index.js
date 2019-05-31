@@ -7,7 +7,6 @@ import '../../../node_modules/swiper/dist/css/swiper.min.css'
     return {
        
        buyyingyuanlist:state.buy.buyyingyuanlist,
-       
     }
 }
 const mapDispatchToProps=(dispatch)=>{

@@ -10,8 +10,7 @@ const action={
             dispatch({
                 type: 'HOME_YINGYUAN_LIST',
                 data: data.data.data.cinemaList
-            })
-            
+            }) 
         })
     },
     gai:(n)=>(dispatch)=>{
