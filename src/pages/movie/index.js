@@ -147,6 +147,7 @@ export default class extends Component {
             </div>
           </div>
           {this.state.length}
+          1
         </div>
 
               
