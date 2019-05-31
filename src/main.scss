@@ -1,0 +1,436 @@
+#root{
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    header{
+        width: 100%;
+        height: 5rem;
+        background: #1c2635;
+        
+        // display: flex;
+        .logo{
+            width: 20%;
+            line-height: 5rem;
+            img{
+                width: 100%;
+                vertical-align: middle;
+            }
+        }
+        .header_war{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            a{
+                color: #999;
+                display: block;
+                line-height: 5rem;
+            }
+            .action{
+                color: #fff;
+                border-bottom: 1px solid #fff;
+            }
+        }
+        
+    }
+    main{
+        position: relative;
+        // 首页
+        .home{
+    
+        }
+        // 我的
+        .user{
+    
+        }
+        // 商城
+        .shop{
+    
+        }
+        // 发现
+        .find{
+    
+        }
+        // 购票
+        .buy{
+            width: 100%;
+            
+           .inp{
+               width:100%;
+               display: flex;
+               justify-content: space-around;
+               background: #f6f6f6;
+               height: 5rem;
+               border-bottom: 2px solid #d8d8d8;
+               .dingwei{
+                   width: 4.5rem;
+                   height: 5rem;
+                   line-height: 5rem;
+                   font: 15px '微软雅黑' #333;
+                   p{
+                       display: inline-block;
+                       transform: rotate(-90deg);
+                   }
+               }
+               .sou{
+                   height: 3.5rem;
+                   width: 15.5rem;
+                   border: 1px solid #999;
+                   border-radius: .5rem;
+                   display: flex;
+                   background: #fff;
+                   margin: auto 0;
+                   span{
+                       display: block;
+                       width: 20%;
+                       line-height: 3.5rem;
+                       font-size: 20px;
+                       color: #ddd;
+                   }
+                   input{
+                       margin: auto 0;
+                       width: 80%;
+                       border: none;
+                       height: 2rem;
+                       outline: none;
+                       font-size: 1.6rem;
+                   }
+               }
+               .tijiao{
+                   width: 6.4rem;
+                   height: 3.4rem;
+                   margin: auto 0;
+                   line-height: 3.4rem;
+                   border: 1px solid #fff;
+                   border-radius: .5rem;
+               }
+           }
+           .nav{
+               display: flex;
+               height: 4rem;
+               justify-content: space-around;
+               color: #777;
+               li{
+                   height: 2rem;
+                   margin: auto 0;
+                   text-align: center;
+                   flex: 1;
+                   line-height: 2rem;
+                   border-right:1px solid #999; 
+               }
+               li:last-child{
+                   border: none;
+               }
+           }
+           .type_list{
+               width: 100%;
+               position: absolute;
+               top: 90px;
+               bottom: 0;
+               background: rgba(0, 0, 0, .5);
+               z-index:11;
+               display: none;
+               p{
+                   width: 100%;
+                   height: 4rem;
+                   background: #fff;
+                   line-height: 4rem;
+                   text-align: left;
+                   border-top: 1px solid #eee;
+                   box-sizing: border-box;
+                   padding-left: 3rem;
+                   color: #777;
+               }
+               .type2{
+                   color: #f97d3f;
+               }
+           }
+           .banner{
+                .swiper-container{
+                    width: 100%;
+                    height: 8.7rem;
+                    position: relative;
+                    .swiper-wrapper{
+                        width: 100%;
+                        height: 8.7rem;
+                        .swiper-slide{
+                             cursor:pointer;
+                             img{
+                                 width: 100%;
+                                 height: 100%;
+                             }
+                        }
+                    }
+                    .swiper-pagination{
+                        width: 10%;
+                        // height: 2rem;
+                        position: absolute;
+                        left: 90%;
+                        bottom: .5rem;
+                    }
+                    .guanggao{
+                        height: 2rem;
+                        width: 4rem;
+                        position: absolute;
+                        left: .5rem;
+                        bottom: 0.5rem;
+                        color: #fff;
+                        border: 1px solid #fff;
+                        z-index:10;
+                        line-height: 2rem;
+                    }
+                        
+                }
+           }
+           .shengming{
+               width: 100%;
+               height: 2rem;
+               color: #999;
+               font-size: 1.3rem;
+               background: #f6f6f6;
+               line-height: 2rem;
+           }
+           .lists{
+               width: 100%;
+               
+               .list{
+                    width: 90%;
+                    // height: 10.4rem;
+                    margin: 1rem 5%;
+                    border-bottom: 1px solid #d8d8d8;
+                    .title{
+                        height: 2.2rem;
+                        line-height: 2.2rem;
+                        font-size: 1.6rem;
+                        color: #333;
+                        text-align: left;
+                        display: flex;
+                        justify-content: space-between;
+                        span{
+                            color: #ff8600;
+                            font-size: 1.8rem;
+                            u{
+                                text-decoration:none;
+                                font-size: 1.3rem;
+                                color: #ff8600;
+                            }
+                        }
+                    }
+                    .dizhi{
+                        color: #777;
+                        font-size: 1.3rem;
+                        text-align: left;
+                        margin-top: 1rem;
+                    }
+                    .typ{
+                        width: 100%;
+                        overflow: hidden;
+                        text-align: left;
+                        display: flex;
+                         margin: 1rem 0;
+                        span{
+                            display: block;
+                            height: 1.5rem;
+                            width: 2rem;
+                            overflow: hidden;
+                            color: #6d8297;
+                            border: 1px solid #6d8297;
+                            border-radius: .3rem;
+                            text-align: center;
+                            font-size: 1rem;
+                            line-height: 1.5rem;
+                            margin: 0 .5rem;
+                        }
+                        span:first-child{
+                            margin-left: 0;
+                        }
+                    }
+               }
+               
+           }
+        }
+        
+    }
+    .deng{
+        width: 100%;
+        height: 4.95rem;
+        background: #1c2635;
+        .conent .logo {
+            width: 20%;
+            line-height: 50px;
+            text-align: center;
+          }
+        .logo{
+            width: 50px;
+            img{
+                width: 6.563rem;
+                
+            }
+        }
+      }
+
+    footer{
+        width: 100%;
+        border-top: 1px solid #eee;
+        background: #f6f6f6;
+        .nav{
+            display: flex;
+            justify-content: space-around;
+            font-size: 18px;
+            height: 5rem;
+            background: #fff;
+            a{
+                display: block;
+                height: 5rem;
+                line-height: 5rem;
+                color: #0074c5;
+            }
+        }
+        ul{
+            display: flex;
+            justify-content: space-around;
+            height: 5rem;
+            li{
+                flex: 1;
+                font-size: 1.4rem;
+                margin: 1.5rem 0;
+                height: 2rem;
+                line-height: 2rem;
+                border-right: 1px solid #999;
+            }
+            li:last-child{
+                border: none;
+            }
+        } 
+        .tu{
+            height: 3.4rem;
+            display: flex;
+            justify-content: center;
+            p{
+                width: 7rem;
+                height: 2.4rem;
+                img{
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+        .zi{
+            font-size: 1.2rem;
+            color: #999;
+            height: 3rem;
+        }
+    }
+    .mov{
+       .top{
+           height: 5rem;
+           width: 100%;
+           background: #333;
+           display: flex;
+           justify-content: space-between;
+           color: #eee;
+           font-size: 36px;
+           
+           p{
+               margin: 0 2rem;
+              line-height: 5rem;
+           }
+           p:first-child{
+               font-size: 26px;
+           }
+       }
+       .main{
+           padding: 2rem 5%;
+           width: 90%;
+           display: flex;
+           .left{
+               flex: 7;
+               .title{
+                   width: 100%;
+                //    font-size: 1.9rem;
+                   color: #333;
+                   font: 1.9rem/2rem '微软雅黑' ;
+                   text-align: left;
+               }
+               .type{
+                   display: flex;
+                   margin-top: 1.1rem;
+                   span{
+                       display: block;
+                       height: 2.1rem;
+                       line-height: 2.1rem;
+                       width: 2.1rem;
+                       border: 1px solid rgb(39, 187, 20);
+                       overflow: hidden;
+                       margin-right: .7rem;
+                       border-radius: .5rem;
+                   }
+               }
+           }
+           .right{
+               flex: 3;
+               display: flex;
+               height: 7.3rem;
+               p{
+                  flex: 1;
+                  height: 2.5rem;
+                  margin: auto 0;
+                  line-height: 2.5rem;
+                  border-left: 1px solid #999; 
+                  img{
+                      height: 100%;
+                  }
+               }
+           }
+       }
+       .bann{
+           width: 100%;
+           height: 17.5rem;
+           background: #828282;
+        //    border: 1px solid #fff;
+           overflow: hidden;
+           .swiper-container1{
+                height: 12.1rem;
+                width: 100%;
+                margin-top: 2.5rem;
+                // margin: auto 0;
+                .swiper-wrapper{
+                    
+                    height: 12.1rem;
+                    .swiper-slide{
+                        padding: 0 2%;
+                        height: 100%;
+                        width: 8.7rem!important;
+                        position: relative;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                        .yinying{
+                            position: absolute;
+                            top: 0;
+                            left: 6%;
+                            width: 88%;
+                            height: 100%;
+                            background: rgba(0, 0, 0, .2);
+                        }
+                        .names{
+                            width: 90%;
+                            margin: 0 auto;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow:ellipsis;
+                            color: #fff;
+                            opacity: .5;
+                        }
+                        .ac1{
+                            display: none;
+                        }
+                    }
+                    .swiper-slide:first-child{
+                        width: 40%!important;
+                    }
+                }
+           }
+       }
+    }
+}
