@@ -107,11 +107,11 @@ class Food extends Component{
 		return <div>
 			      <Img src={require('./img/get.ashx.jpg')} />
 				  <Ol>
-				  <li><p><i class="fa fa-asterisk" aria-hidden="true"></i></p><span>时光Top100</span></li>
+				  <li><p><i className="fa fa-asterisk" aria-hidden="true"></i></p><span>时光Top100</span></li>
                     
-					 <li><p><i class="fa fa-bar-chart" aria-hidden="true"></i></p><span>华语Top100</span></li>
+					 <li><p><i className="fa fa-bar-chart" aria-hidden="true"></i></p><span>华语Top100</span></li>
 				
-					  <li><p><i class="fa fa-line-chart" aria-hidden="true"></i></p><span>全球票房榜</span></li>
+					  <li><p><i className="fa fa-line-chart" aria-hidden="true"></i></p><span>全球票房榜</span></li>
 				  </Ol>
 				<Ul>
 					{
