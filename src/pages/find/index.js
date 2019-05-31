@@ -25,17 +25,17 @@ class Food extends Component{
 		   <Router>
 		     <div>
 				<P>
-			    <NavLink to="/index/index1">新闻</NavLink>
-				<NavLink to="/index/index2">预告片</NavLink>
-				<NavLink to="/index/index3">排行榜</NavLink>
-				<NavLink to="/index/index4">影评</NavLink>
+			    <NavLink to="/find/index1">新闻</NavLink>
+				<NavLink to="/find/index2">预告片</NavLink>
+				<NavLink to="/find/index3">排行榜</NavLink>
+				<NavLink to="/find/index4">影评</NavLink>
 			</P>
 			   <Switch>
-		        <Route exact path="/index/index1" component={Index1}/>
+		        <Route exact path="/find/index1" component={Index1}/>
 						<Route path='/detail2/:id' component={Detail2}></Route>
-				<Route exact path="/index/index2" component={Index2}/>
-				<Route exact path="/index/index3" component={Index3}/>
-				<Route exact path="/index/index4" component={Index4}/>
+				<Route exact path="/find/index2" component={Index2}/>
+				<Route exact path="/find/index3" component={Index3}/>
+				<Route exact path="/find/index4" component={Index4}/>
 				</Switch>
 			    
 				

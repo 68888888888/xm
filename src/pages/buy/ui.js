@@ -61,7 +61,7 @@ export default class extends Component {
           </div>
           <p className="shengming">以下影院均非时光网自营</p>
           <div className="lists">
-            {/* {this.props.buyyingyuanlist.map((item,index)=>(
+            {this.props.buyyingyuanlist.map((item,index)=>(
                 <div key={index} className='list' onClick={this.props.go.bind(this,item.cinemaId)}>
                     <p className='title'>{item.cinameName}<span>{item.minPrice/100}<u>元起</u></span></p>
                     <p className='dizhi'>{item.address}</p>
@@ -84,7 +84,7 @@ export default class extends Component {
                     </p>
                 </div>
                 
-            ))} */}
+            ))}
           </div>
         </div>
 
