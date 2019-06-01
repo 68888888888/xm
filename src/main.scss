@@ -36,11 +36,323 @@
         position: relative;
         // 首页
         .home{
-    
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            font-family: none;
+            .dao{
+                display: flex;
+                width: 100%;
+                height: 6.018rem;
+                align-items: center;
+                background: #e7e4e4;
+                b{
+                    font-size: 2rem;
+                    padding-left: 2rem;
+                    padding-right: 1rem;
+                }
+                i{
+                    font-size: 2rem;
+                    padding-right: 2.2rem;
+                }
+                .ren{
+                    font-size: 1.8rem;
+                    color: #777;
+                    display: flex;
+                    border: 1px solid #d8d8d8;
+                    padding: .8rem .6rem .8rem .6rem;
+                    border-radius: 1rem;
+                    background: white;
+                        span{
+                            background: #fff url(//static1.mtime.cn/html5/20190531112624/images/2014/search_ico_01.png) no-repeat .04rem center;
+                            width: 2.4rem;
+                            height: 2.4rem;
+                            background-size: cover;
+                            display: block;
+                            margin-right: 0.8rem;
+                            padding-bottom: 0.2rem;
+                        }
+                }
+                
+                
+            }
+
+            .hua{
+                width: 100%;
+                height: 34.718rem;
+                h2{
+                    padding-left: 1.6rem;
+                    padding-top: 1rem;
+                    padding-bottom: 1rem;
+                    b{
+                        font-size: 2.2rem;
+                    }
+                    i{
+                        font-size: 2.6rem;
+                        padding-left: 14.8rem;
+                    }
+                }
+                ul{
+                    display:flex;
+                    width:100%;
+                    flex-wrap:wrap;
+                    li{
+                      width:25%;
+                      display:flex;
+                      flex-direction:column;
+                      padding-top: 1rem;
+                    }
+                    img{
+                      height: 10rem;
+                      width: 6.8rem;
+                    }
+                  } 
+            }
+
+            .ji{
+                width: 100%;
+                margin-top: 1.8rem;
+                h2{
+                    padding-left: 1.6rem;
+                    padding-top: 1.6rem;
+                    padding-bottom: 1.6rem;
+                    border-top: 1px solid #d8d8d8;
+                    b{
+                        font-size: 2.2rem;
+                    }
+                    i{
+                        font-size: 2.6rem;
+                        padding-left: 18.8rem;
+                    }
+                  }
+                  img{
+                    width:100%;
+                    padding-top: 2rem;
+                    padding-bottom: 2rem;
+                    background: #f6f6f6;
+                  }
+            }
+
+            .jin{
+                width: 100%;
+                h2{
+                    display: flex;
+                    padding-left: 1.6rem;
+                    padding-top: 1rem;
+                    b{
+                        font-size: 2.2rem;
+                    }
+                }
+                ul{
+                    width: 100%;
+                    li{
+                        display: flex;
+                        width: 96%;
+                        height: 12.8rem; 
+                        align-items: center;
+                        border-bottom: 1px solid #d8d8d8;
+                        margin-left: 1.6rem;
+                        img{
+                            width: 13rem;
+                            height: 9rem;
+                            margin-right: 1rem;
+                        }
+                        p{
+                            width: 100%;
+                            display: flex;
+                            flex-wrap: wrap;
+                            box-sizing: border-box;
+                            span{
+                                margin-bottom: 0.2rem;
+                            }
+                            .one{
+                                color: #333;;
+                                font-size: 20px;
+                            }
+                            .two,.three{
+                                color: #777;
+                                font-size: 1.4rem;
+
+                            }
+                        }
+                    }
+                }
+            }
+
         }
         // 我的
         .user{
-    
+            
+            width: 100%;
+            height: 100%;
+            background: #f6f6f6;
+                .content{
+                    width: 100%;
+                    height: 16.991rem;
+                    display:flex;
+                        .hd {
+                          display: flex;
+                          background: url(//static1.mtime.cn/html5/20190523161337/images/2014/set_endlogin.jpg) no-repeat;
+                          width: 100%;
+                          height: 16.991rem;
+                          background-size: cover;
+                           li img{
+                               width: 6.563rem;
+                               height: 6.563rem;
+                               margin-left: 4.6rem;
+                               margin-top: 3.8rem;
+                               border-radius: 4rem;
+                           }
+                           .many{
+                               margin-top: 5.4rem;
+                               p{
+                                color: white;
+                                position: absolute;
+                                left: 13rem; 
+                                margin-top: .6rem;
+                               }
+                           }
+                           li .mo{
+                               background: url(//static1.mtime.cn/html5/20190523161337/images/2014/vip_grade.png) no-repeat 0 0;
+                               width: 2.4rem;
+                               height: 1.6rem;
+                               color: #fff;
+                               background-size: auto 1.5rem;
+                               display: block; 
+                               float: left;
+                               font-size: 1.84rem;
+                               line-height: 1.5rem;
+                               margin-top: .3rem;
+                               margin-left: 1.8rem;
+                            }
+                            li .re{
+                                color: white;
+                                font-size: 1.84rem;
+                                
+                            }
+                        }          
+                }
+
+                .mai{
+                    display: flex;
+                    width: 100%;
+                    height: 11.904rem;
+                    background: white;
+                        ul{
+                            display: flex;
+                            width: 100%;
+                            justify-content: space-around;
+                            li{
+                                margin-top: 2.4rem;
+                                .one{
+                                    background:#ffb059 url(//static1.mtime.cn/html5/20190523161337/images/2014/i_cate.png) no-repeat center center;
+                                    width: 4.5rem;
+                                    height: 4.5rem;
+                                    border-radius: 5rem;
+                                    background-size: 5rem;
+                                    
+                                }
+                                .two{
+                                    background:#78bdfd url(//static1.mtime.cn/html5/20190523161337/images/2014/i_movie.png) no-repeat center center;
+                                    width: 4.5rem;
+                                    height: 4.5rem;
+                                    border-radius: 5rem;
+                                    background-size: 3rem;
+                                    margin-left: 1rem;
+                                }
+                                .three{
+                                    background:#ff815a url(//static1.mtime.cn/html5/20190523161337/images/2014/i_shop.png) no-repeat center center;
+                                    width: 4.5rem;
+                                    height: 4.5rem;
+                                    border-radius: 5rem;
+                                    background-size: 2.4rem;
+                                }
+                                span{
+                                    display: block;
+                                    margin-top: 1rem;
+                                }
+                            }
+                            
+                               
+                        }
+                }
+                .wan{
+                    display: flex;
+                    width: 100%;
+                    height: 100%;
+                    background: white;
+                    margin-top: 2rem;
+                        ul {
+                            li{
+                            display: flex;
+                            width: 35.763rem;
+                            height: 5.243rem;
+                            margin-left: 2.2rem;
+                            line-height: 5.243rem;
+                            font-size: 1.8rem;
+                            border-bottom: 1px solid #d8d8d8;
+                                p{
+                                    position: absolute;
+                                    right: 2.4rem;
+                                }
+                        }
+                            .dian{
+                                background: url(//static1.mtime.cn/html5/20190523161337/images/2014/my_card.png) no-repeat center center;
+                                width: 2.5rem;
+                                height: 1.8rem;
+                                background-size: 1.8rem auto;
+                                padding-top: 3.4rem;
+                            
+                            }
+                            .shang{
+                                background: url(//static1.mtime.cn/html5/20190523161337/images/2014/my_card.png) no-repeat center center;
+                                width: 2.5rem;
+                                height: 1.8rem;
+                                background-size: 1.8rem auto;
+                                padding-top: 3.4rem;
+                            }
+                            .huo{
+                                background: url(//static1.mtime.cn/html5/20190523161337/images/2014/my_radio.png) no-repeat center 0;
+                                width: 2.5rem;
+                                height: 1.8rem;
+                                background-size: 1.8rem auto;
+                                margin-top: 1.6rem;
+                            }
+
+                            .dong{
+                                background: url(//static1.mtime.cn/html5/20190523161337/images/2014/my_movie.png) no-repeat center center;
+                                width: 2.5rem;
+                                height: 1.8rem;
+                                background-size: 1.8rem auto;
+                                padding-top: 3.4rem;
+                            }
+                            .shou{
+                                background: url(//static1.mtime.cn/html5/20190523161337/images/2014/my_fav.png) no-repeat center 0;
+                                width: 2.5rem;
+                                height: 1.8rem;
+                                background-size: 1.8rem auto;
+                                margin-top: 1.6rem;
+                            }
+                        
+                        
+                    }
+                        
+                }
+
+                button {
+                    margin-top: 2.6rem;
+                    margin-bottom: 2.6rem;
+                    width: 33.8rem;
+                    height: 4.6rem;
+                    top: 21rem;
+                    border-radius: 2.5rem;
+                    border: none;
+                    outline:none;
+                    background: #f13900;
+                    border: 0.1rem solid #f13900;
+                    font-size: 2rem;
+                    color: white;
+                }
         }
         // 商城
         .shop{
@@ -251,23 +563,290 @@
         
     }
     .deng{
+        display: flex;
         width: 100%;
-        height: 4.95rem;
-        background: #1c2635;
-        .conent .logo {
-            width: 20%;
+        background: #f6f6f6;
+        height: 50rem;
+        .content{
+            display: flex;
+            position: relative;
+            width: 100%;
+            height: 4.95rem;
+            background: #1c2635;
+            display: inline-block;
+        }
+        .content .logo {
             line-height: 50px;
             text-align: center;
-          }
+        }
         .logo{
-            width: 50px;
             img{
                 width: 6.563rem;
+            }
+        }
+        .fan{
+           
+            span{
+                color: white;
+                font-size: 2.190rem;
+                padding-right: 11.8rem;
+            }
+        }
+        .log{
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 5.8rem;
+            display: flex;
+            box-shadow: 0 3px 3px rgba(51,51,51,0.1);
+            background: #fff;
+            li{
+                width: 35.2rem;
+                height: 4.785rem;
+                border-bottom: 1px solid #d8d8d8;
+                margin-left: 2.2rem;
+            }
+            label{
+                color: #777;
+                width: 7.054rem;
+                font-size: 2rem;
+                line-height: 4.785rem;
+            }
+            input{
+                font-size: 1.6rem;
+                width: 80%;
+                border: none;
+                outline:none;
+                margin-left: 1rem;
+            }
+        }
+
+        button {
+            position: absolute;
+            width: 33.8rem;
+            height: 4.6rem;
+            top: 18rem;
+            margin-left: 1.8rem;
+            border-radius: 2.5rem;
+            border: none;
+            outline:none;
+            background: #1e7dd7;
+            border: 0.1rem solid #1e7dd7;
+            font-size: 2rem;
+            color: white;
+        }
+
+        .lan{
+            position: absolute;
+            top: 26rem;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            font-size: 1.8rem;
+            span{
+                color: #1e7dd7;
+                padding-left: 1.8rem;
+            }
+            p{
+                padding-right: 2rem;
+            }
+        }
+
+        .otherlogin{
+            position: absolute;
+            top: 32rem;
+            width: 100%;
+            text-align: center;
+            
+            span{
+                color: #999;
+                font-size: 1.6rem;
+            }
+            ul{
+                width: 100%;
+                display: flex;
+                padding-top: 2rem;
+                justify-content: center;
+                li{
+                    
+                    .o_sina{
+                    background: url(//static1.mtime.cn/html5/20190530163934/images/2014/o_sina.png) no-repeat;
+                    background-size: cover;
+                    width: 6.153rem;
+                    height: 6.153rem;
+                    display: block;
+                    margin-right: 1.6rem;
+                    }
+                    .o_qq{
+                        background: url(//static1.mtime.cn/html5/20190530163934/images/2014/o_qq.png) no-repeat;
+                        background-size: cover;
+                        width: 61.53px;
+                        height: 61.53px;
+                        display: block;
+                        margin-left: 1.6rem;
+                        }
+                }
                 
             }
         }
-      }
 
+        }
+
+        .zu {
+            display: flex;
+            width: 100%;
+            .content{
+                display: flex;
+                position: relative;
+                width: 100%;
+                height: 4.95rem;
+                background: #1c2635;
+                display: inline-block;
+            }
+            .content .logo {
+                line-height: 50px;
+                text-align: center;
+            }
+            .logo{
+                img{
+                    width: 6.563rem;
+                }
+            }
+            .fan{
+               
+                span{
+                    color: white;
+                    font-size: 2.190rem;
+                    padding-right: 11.8rem;
+                }
+            }
+            .regist{
+                width: 100%;
+                position: absolute;
+                left: 0;
+                top: 5.8rem;
+                display: flex;
+                    li{
+                        width: 35.763rem;
+                        height: 4.785rem;
+                        border-bottom: 1px solid #d8d8d8;
+                        margin-left: 2.2rem;
+                    }
+                    label{
+                        color: #777;
+                        width: 7.054rem;
+                        text-align: right;
+                        margin-right: 0.8rem;
+                        font-size: 2rem;
+                        line-height: 4.785rem;
+                    }
+                    input{
+                        font-size: 16px;
+                        width: 60%;
+                        border: none;
+                        outline:none;
+                    }
+            }
+    
+            button {
+                position: absolute;
+                width: 33.8rem;
+                height: 4.6rem;
+                top: 30rem;
+                margin-left: 1.8rem;
+                border-radius: 2.5rem;
+                border: none;
+                outline:none;
+                background: #1e7dd7;
+                border: 0.1rem solid #1e7dd7;
+                font-size: 2rem;
+                color: white;
+            }
+    
+            .agree{
+                position: absolute;
+                top: 23rem;
+                left: 2.2rem;
+                font-size: 1.6rem;
+                    i{
+                        background: url(//static1.mtime.cn/html5/20190523161337/images/2014/i_suss.png) no-repeat;
+                        background-size: cover;
+                        display: block;
+                        width: 2rem;
+                        height: 2rem;
+                        float: left;
+                        margin-right: 0.6rem;
+                    }
+                    .tong{
+                        color: #777;
+                    }
+                    .yi{
+                         color: #1e7dd7;
+                    }
+                    .le{
+                        display: flex;
+                        color: #1e7dd7;
+                        padding-top: 0.6rem;
+                   }
+            }
+    
+            footer{
+                width: 100%;
+                border-top: 1px solid #eee;
+                background: #f6f6f6;
+                position: absolute;
+                bottom: 0;
+                .nav{
+                    display: flex;
+                    justify-content: space-around;
+                    font-size: 18px;
+                    height: 5rem;
+                    background: #fff;
+                    a{
+                        display: block;
+                        height: 5rem;
+                        line-height: 5rem;
+                        color: #0074c5;
+                    }
+                }
+                ul{
+                    display: flex;
+                    justify-content: space-around;
+                    height: 5rem;
+                    li{
+                        flex: 1;
+                        font-size: 1.4rem;
+                        margin: 1.5rem 0;
+                        height: 2rem;
+                        line-height: 2rem;
+                        border-right: 1px solid #999;
+                    }
+                    li:last-child{
+                        border: none;
+                    }
+                } 
+                .tu{
+                    height: 3.4rem;
+                    display: flex;
+                    justify-content: center;
+                    p{
+                        width: 7rem;
+                        height: 2.4rem;
+                        img{
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
+                }
+                .zi{
+                    font-size: 1.2rem;
+                    color: #999;
+                    height: 3rem;
+                }
+                
+            }
+        }
+      
     footer{
         width: 100%;
         border-top: 1px solid #eee;
