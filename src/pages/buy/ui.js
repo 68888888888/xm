@@ -7,8 +7,13 @@ export default class extends Component {
        imgs:['https://static1.mtime.cn/feature/mobile/banner/2019/0304/naodong750-175.jpg',
             'https://static1.mtime.cn/feature/mobile/banner/2019/0311/hbt750175.jpg']
      }
+     
+     
      store.subscribe(() => {
          console.log('111')
+         this.setState({
+           
+    })
      })
      
   }
@@ -16,11 +21,9 @@ export default class extends Component {
     
   
   componentDidMount() {
-    this.setState({
-           
-    })
     this.props.getlists()
-    this.props.swiper()
+    
+    
   }
     render () {
       

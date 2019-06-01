@@ -14,7 +14,7 @@ export default class extends Component {
      this.getlists=this.getlists.bind(this)
   }
   componentDidMount() {
-   this.getlists()
+   this.getlists(this.props.match.params.mid)
    
    
   }
@@ -27,9 +27,11 @@ export default class extends Component {
 //   }
   componentDidUpdate(){
     this.swiper()
+    this.swiper1()
    console.log(document.querySelectorAll('.swiper-slide'))
    document.querySelectorAll('.swiper-slide')[1].click()
   }
+  
   swiper () {
    //   var that=this;
       new Swiper('.swiper-container1', {
@@ -64,13 +66,21 @@ export default class extends Component {
            }
       })
    }
+   swiper1 () {
+      //   var that=this;
+         new Swiper('.swiper-container2', {
+            
+            slidesPerView : 'auto',
+             
+         })
+      }
   back(){
    this.props.history.goBack()
    console.log(this.state.lists.cinema.name)
   }
 
-   getlists(){
-      axios.get('/movie/cinema/showtime.api?t=2019530146546636&cinemaId=8324')
+   getlists(n){
+      axios.get(`/movie/cinema/showtime.api?t=2019530146546636&cinemaId=${n}`)
       .then(data=>{
          console.log(data.data.data)
          console.log(this)
@@ -80,7 +90,7 @@ export default class extends Component {
          
       })
    }
-   gaishow(n,m){
+   gaishow(n,m,num){
       let p=document.querySelectorAll('.ac')
       let p1=document.querySelectorAll('.ac1')
       console.log(p)
@@ -95,6 +105,20 @@ export default class extends Component {
       // this.setState({
       //    length:n
       // })
+      this.refs.jianjie.innerHTML=this.state.lists.movies[num].title
+      this.refs.shijian.innerHTML=this.state.lists.movies[num].length+'-'+this.state.lists.movies[num].type
+   }
+   gais(n){
+      console.log(this.refs['t'+n])
+      console.log(this)
+      console.log(new Date(1559359200))
+      for(let i=0;i<this.state.lists.movies[0].showDates.length;i++){
+         this.refs['t'+i].className='acp0'
+         
+      }
+
+      this.refs['t'+n].className='acp'
+
    }
     render () {
       
@@ -133,7 +157,7 @@ export default class extends Component {
                   </div>
                   {this.state.lists.length===0?'':this.state.lists.movies.map((item,index)=>(
                   
-                    <div onClick={this.gaishow.bind(this,item.title,item.movieId)}
+                    <div onClick={this.gaishow.bind(this,item.title,item.movieId,index)}
                      key={'c'+index} 
                      className="swiper-slide">
                       <img src={item.img} alt=""/>
@@ -144,8 +168,35 @@ export default class extends Component {
                </div>
             </div>
           </div>
-          {this.state.length}
-          11234567
+          <div  className="jianjie">
+              <p ref='jianjie' className="p1"></p>
+              <p ref='shijian' className="p2"></p>
+              <p className="p3">&gt;</p>
+          </div>
+          <div className="riqi">
+          <div className="swiper-container2">
+               <div className="swiper-wrapper">
+                  {this.state.lists.length===0?'':this.state.lists.movies[0].showDates.map((item,index)=>(
+                  
+                    <div ref={'t'+index}
+                    onClick={this.gais.bind(this,index)}
+                     key={'d'+index} 
+                     className="swiper-slide">
+                      {item}
+                    </div>
+                  ))}
+               </div>
+            </div>
+          </div>
+          {this.state.lists.length===0?'':this.state.lists.showtimes[0].list.map((item,index)=>(
+             <div className='gp' key={index}>
+                <p>{parseInt((item.showDay % (1000 * 60 * 60)) / (1000 * 60)) }:{parseInt((item.showDay % (1000 * 60)) / 1000)}</p>
+                <p>{item.versionDesc}/{item.language}<span>{item.hall}</span></p>
+                <p>￥{item.price===''?'39':item.price}</p>
+                <p>购票</p>
+                
+             </div>
+          ))}
         </div>
 
               

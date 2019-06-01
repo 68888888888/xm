@@ -468,3 +468,127 @@
 #root .mov .bann .swiper-container1 .swiper-wrapper .swiper-slide:first-child {
   width: 40% !important;
 }
+
+#root .mov .jianjie {
+  width: 100%;
+  height: 4.5rem;
+  padding: 1.5rem 0;
+  position: relative;
+}
+
+#root .mov .jianjie .p1 {
+  color: #333;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+#root .mov .jianjie .p2 {
+  font-size: 1.5rem;
+  color: #777;
+}
+
+#root .mov .jianjie .p3 {
+  position: absolute;
+  right: 3rem;
+  top: 35%;
+  font-size: 1.8rem;
+  color: #999;
+}
+
+#root .mov .riqi {
+  background: #f6f6f6;
+  width: 100%;
+  height: 5rem;
+}
+
+#root .mov .riqi .swiper-container2 {
+  height: 5rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+#root .mov .riqi .swiper-container2 .swiper-wrapper {
+  height: 5rem;
+}
+
+#root .mov .riqi .swiper-container2 .swiper-wrapper .swiper-slide {
+  padding: 0 2%;
+  height: 100%;
+  width: 8.7rem !important;
+  position: relative;
+  line-height: 5rem;
+  font-size: 1.8rem;
+  border-bottom: 1px solid #fff;
+}
+
+#root .mov .riqi .swiper-container2 .swiper-wrapper .acp0 {
+  padding: 0 2%;
+  height: 100%;
+  width: 8.7rem !important;
+  position: relative;
+  line-height: 5rem;
+  font-size: 1.8rem;
+  border-bottom: 1px solid #fff;
+}
+
+#root .mov .riqi .swiper-container2 .swiper-wrapper .acp {
+  padding: 0 2%;
+  height: 100%;
+  width: 8.7rem !important;
+  position: relative;
+  line-height: 5rem;
+  font-size: 1.8rem;
+  border-bottom: 1px solid #fff;
+  color: #1e7dd7;
+  border-bottom: 1px solid #1e7dd7;
+}
+
+#root .mov .gp {
+  height: 6.7rem;
+  width: 94%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #eee;
+  font-family: '微软雅黑';
+}
+
+#root .mov .gp p:first-child {
+  flex: 1;
+  color: #333;
+  font-size: 2.4rem;
+  height: 3.2rem;
+  margin: auto 0;
+  font-weight: 600;
+}
+
+#root .mov .gp p:nth-child(2) {
+  flex: 1;
+  margin: auto 0;
+  font-size: 1.5rem;
+  color: #333333;
+}
+
+#root .mov .gp p:nth-child(2) span {
+  display: block;
+}
+
+#root .mov .gp p:nth-child(3) {
+  flex: 1;
+  color: #ff8600;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: auto 0;
+}
+
+#root .mov .gp p:nth-child(4) {
+  flex: 1;
+  height: 3.3rem;
+  width: 8.7rem;
+  background: #ff8600;
+  border-radius: 1.65rem;
+  margin: auto 0;
+  color: #fff;
+  font-size: 1.6rem;
+  line-height: 3.3rem;
+}

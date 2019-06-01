@@ -73,6 +73,7 @@ const mapDispatchToProps=(dispatch)=>{
        getlists(){
            dispatch(action.getlists(this.match.params.hehe))
            console.log(this)
+           this.swiper()
        },
        
    }
