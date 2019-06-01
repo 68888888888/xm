@@ -30,4 +30,26 @@ module.exports = function(app) {
         }
       })
     );
+
+    {/** 注册登录    首页*/}
+    app.use(
+      proxy("/api/**", {
+        target: " http://10.9.25.210:3333",
+        changeOrigin: true,
+        secure: false,
+        pathRewrite: {
+          "^/api": "/"
+        }
+        })
+    );
+    app.use(
+      proxy("/wu/**", {
+        target: " https://m.mtime.cn",
+        changeOrigin: true,
+        secure: false,
+        pathRewrite: {
+          "^/wu": "/"
+        }
+        })
+    );
 };
