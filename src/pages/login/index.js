@@ -37,14 +37,8 @@ export default class extends Component {
       username: this.state.username,
       password: this.state.password
     }
-     axios.post('/api/login',sendObj,{
-      
-      headers: {
-         'Content-Type': 'application/x-www-form-urlencoded',
-       }
-     }).then(res=>{
-      {switch(res.data.ret){
-
+    axios.post('/api/login',sendObj).then(res=>{
+      switch(res.data.ret){
         case -1:
           alert('用户未注册')
         break;
@@ -55,11 +49,10 @@ export default class extends Component {
           sessionStorage.setItem('user',this.state.username);
           this.props.history.push({pathname: '/home'});
           break;
-          
-      }}
-     }).catch(err=>{
-       console.log(err)
-     })
+      }
+    }).catch(err=>{
+      console.log(err)
+    })
   }
     
   
