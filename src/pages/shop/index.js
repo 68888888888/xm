@@ -1,6 +1,19 @@
 import React, { Component } from 'react';
-export default class extends Component {
+import axios from 'axios'
 
+export default class extends Component {
+  constructor(props){
+    super(props)
+    this.state={
+      list6:[]
+    }
+  }
+
+  componentWillMount(){
+    axios.get("").then((res)=>{
+      
+    })
+  }
     
   
     render () {
